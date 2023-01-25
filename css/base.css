@@ -30,3 +30,7 @@ a {
 button {
     border: none;
 }
+
+fieldset {
+    border: none;
+}
