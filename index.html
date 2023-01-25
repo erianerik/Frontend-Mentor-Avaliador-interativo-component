@@ -30,31 +30,31 @@
           offering!</p>
 
         <fieldset class="rating__form__fieldset">
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-1" value="1">
           <label class="form__fieldset__rating-label" for="rating-button-1">1</label>
-          <input type="radio" name="rating" id="rating-button-1" value="1">
 
-          <label class="form__fieldset__rating-label" for="rating-button-2">2</label>
           <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-2" value="2">
+          <label class="form__fieldset__rating-label" for="rating-button-2">2</label>
 
-          <label class="form__fieldset__rating-label" for="rating-button-3">3</label>
           <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-3" value="3">
+          <label class="form__fieldset__rating-label" for="rating-button-3">3</label>
 
-          <label class="form__fieldset__rating-label" for="rating-button-4">4</label>
           <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-4" value="4">
+          <label class="form__fieldset__rating-label" for="rating-button-4">4</label>
 
-          <label class="form__fieldset__rating-label" for="rating-button-5">5</label>
           <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-5" value="5">
+          <label class="form__fieldset__rating-label" for="rating-button-5">5</label>
         </fieldset>
 
         <input class="form__fieldset__submit" type="button" value="Submit">
       </form>
 
-      <div class="main__rating__thanks" style="display: none;">
+      <div class="main__rating__thanks none">
         <figure class="rating__thanks__figure">
           <img src="./images/illustration-thank-you.svg" class="rating__thanks__image" alt="illustration thank you">
         </figure>
 
-        <span class="rating__thanks__selection">You selected <!-- Add rating here --> out of 5</span>
+        <span class="rating__thanks__selection">You selected <span id="rating-value"></span> out of 5</span>
         <h2 class="rating__thanks__title title">Thank you!</h2>
         <p class="rating__thanks__description description">We appreciate you taking the time to give a rating. If you
           ever need more support, don’t hesitate to get in
