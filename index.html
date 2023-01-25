@@ -16,29 +16,53 @@
 </head>
 
 <body>
+  <main class="main">
+    <div class="main__rating">
 
-  How did we do?
+      <form  class="main__rating__form" >
+        <figure class="rating__form__figure">
+          <img src="./images/icon-star.svg" alt="Star Icon" class="form__figure__image">
+        </figure>
 
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
+        <h2 class="rating__form__title title">How did we do?</h2>
+        <p class="rating__form__description description"> Please let us know how we did with your support request. All
+          feedback is appreciated to help us improve our
+          offering!</p>
 
-  1 2 3 4 5
+        <fieldset class="rating__form__fieldset">
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-1" value="1">
+          <label class="form__fieldset__rating-label" for="rating-button-1">1</label>
 
-  Submit
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-2" value="2">
+          <label class="form__fieldset__rating-label" for="rating-button-2">2</label>
 
-  <!-- Rating state end -->
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-3" value="3">
+          <label class="form__fieldset__rating-label" for="rating-button-3">3</label>
 
-  <!-- Thank you state start -->
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-4" value="4">
+          <label class="form__fieldset__rating-label" for="rating-button-4">4</label>
 
-  You selected <!-- Add rating here --> out of 5
+          <input type="radio" name="rating" class="form__fieldset__rating-button" id="rating-button-5" value="5">
+          <label class="form__fieldset__rating-label" for="rating-button-5">5</label>
+        </fieldset>
 
-  Thank you!
+        <input class="form__fieldset__submit" type="submit" value="Submit">
+      </form>
 
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
+      <div class="main__rating__thanks">
+        <figure class="rating__thanks__figure">
+          <img src="./images/illustration-thank-you.svg" class="rating__thanks__image" alt="illustration thank you">
+        </figure>
 
-  <!-- Thank you state end -->
+        <span class="rating__thanks__selection">You selected <span id="rating-value"></span> out of 5</span>
+        <h2 class="rating__thanks__title title">Thank you!</h2>
+        <p class="rating__thanks__description description">We appreciate you taking the time to give a rating. If you
+          ever need more support, don’t hesitate to get in
+          touch!</p>
+      </div>
+    </div>
 
+  </main>
 </body>
 
 </html>
