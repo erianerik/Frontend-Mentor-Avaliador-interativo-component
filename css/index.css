@@ -98,6 +98,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    animation: opacity-animation backwards .5s;
 }
 
 .rating__thanks__figure {
@@ -114,11 +115,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: .2rem;
     text-align: center;
     font-size: .9rem;
     border-radius: 2rem;
     background-color: var(--dark-blue);
     color: var(--orange);
+}
+
+#rating-value {
+    display: inline;
+    color: inherit;
+    font-size: inherit;
 }
 
 .rating__thanks__description {
